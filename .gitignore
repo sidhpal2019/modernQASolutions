@@ -8,10 +8,6 @@ dist/
 build/
 out/
 target/
-*.class
-*.jar
-*.war
-*.ear
 
 # IDE specific files
 .vscode/
@@ -36,8 +32,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 .pytest_cache/
 *.egg-info/
-dist/
-build/
 
 # Java
 *.class
@@ -70,7 +64,6 @@ coverage/
 *.log
 
 # OS specific
-.DS_Store
 Thumbs.db
 Desktop.ini
 
@@ -78,8 +71,6 @@ Desktop.ini
 *.tmp
 *.temp
 *.bak
-*.swp
-*~
 
 # Environment variables
 .env
