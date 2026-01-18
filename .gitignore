@@ -46,8 +46,6 @@ pip-delete-this-directory.txt
 hs_err_pid*
 
 # .NET
-bin/
-obj/
 *.suo
 *.user
 *.userosscache
