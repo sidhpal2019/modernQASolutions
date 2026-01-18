@@ -40,10 +40,13 @@ modernQASolutions/
 
 To migrate your local code to this repository:
 
-1. Copy your test files and source code to the cloned repository directory
-2. Stage your changes: `git add .`
-3. Commit your changes: `git commit -m "Your commit message"`
-4. Push to the repository: `git push origin your-branch-name`
+1. Navigate to your local Visual Studio Code project directory
+2. Copy your test files and source code to this cloned repository directory
+3. Create a new branch for your changes: `git checkout -b your-branch-name`
+4. Stage your changes: `git add .`
+5. Commit your changes: `git commit -m "Your commit message"`
+6. Push to the repository: `git push origin your-branch-name`
+7. Create a pull request on GitHub to merge your changes
 
 ## License
 
