@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sidhpal2019/modernQASolutions/static/css/main.2a70a18c.css",
-    "main.js": "/sidhpal2019/modernQASolutions/static/js/main.2b6aa744.js",
+    "main.js": "/sidhpal2019/modernQASolutions/static/js/main.54a54b6f.js",
     "static/media/MainLandingPageHero.png": "/sidhpal2019/modernQASolutions/static/media/MainLandingPageHero.30b380787ef7adb09eb6.png",
     "static/media/AgencyLandingPage.jpeg": "/sidhpal2019/modernQASolutions/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/sidhpal2019/modernQASolutions/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
@@ -92,10 +92,10 @@
     "static/media/arrow-left-3-icon.svg": "/sidhpal2019/modernQASolutions/static/media/arrow-left-3-icon.087294c1fe78c7fd2f37c3a92b1f1dff.svg",
     "static/media/arrow-right-3-icon.svg": "/sidhpal2019/modernQASolutions/static/media/arrow-right-3-icon.5bf133930c89abdc6760c3a5dacf085b.svg",
     "main.2a70a18c.css.map": "/sidhpal2019/modernQASolutions/static/css/main.2a70a18c.css.map",
-    "main.2b6aa744.js.map": "/sidhpal2019/modernQASolutions/static/js/main.2b6aa744.js.map"
+    "main.54a54b6f.js.map": "/sidhpal2019/modernQASolutions/static/js/main.54a54b6f.js.map"
   },
   "entrypoints": [
     "static/css/main.2a70a18c.css",
-    "static/js/main.2b6aa744.js"
+    "static/js/main.54a54b6f.js"
   ]
 }
