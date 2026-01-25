@@ -116,7 +116,7 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      <Router>
+      <Router basename="/sidhpal2019/modernQASolutions">
         <Routes>
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
