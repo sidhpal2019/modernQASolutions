@@ -123,10 +123,6 @@ export default ({
         <Content2Xl>
           <SiteHeader />
           <HeroRow>
-            <UpdateNotice>
-              <UpdateNoticeIcon />
-              Last updated on 10th September, 2022 - Added support for React v18 and TailwindCSS v3!
-            </UpdateNotice>
             <TextColumn>
               <Heading as="h1">{heading}</Heading>
               <Description>{description}</Description>
