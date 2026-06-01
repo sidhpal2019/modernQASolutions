@@ -105,6 +105,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import SwiftAPI from "pages/SwiftAPI.js";
 import MobileOrbit from "pages/MobileOrbit.js";
+import WhoWeAre from "pages/WhoWeAre.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -123,6 +124,7 @@ export default function App() {
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/products/swiftapi" element={<SwiftAPI />} />
           <Route path="/products/mobileorbit" element={<MobileOrbit />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/" element={<MainLandingPage />} />
         </Routes>
       </Router>

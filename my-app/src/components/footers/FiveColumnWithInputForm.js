@@ -33,7 +33,7 @@ const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-10`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
@@ -135,10 +135,10 @@ export default () => {
         <Divider />
         <ThreeColRow>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoImg src={LogoImage} style={{ width: "56px", height: "auto" }} />
+            <LogoText>Modern QA Solutions</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2026 Modern QA Solutions. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
