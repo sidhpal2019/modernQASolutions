@@ -8,8 +8,7 @@ import Footer from "components/footers/FiveColumnWithInputForm.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 import HowItWorks from "components/features/TwoColWithSteps.js";
 import Benefits from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import Testimonials from "components/testimonials/ThreeColumnWithProfileImage.js";
-import Pricing from "components/pricing/ThreePlans.js";
+import swiftApiHeroImage from "images/demo/SWIFTAPI_Screen_laptopView.png";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
@@ -22,8 +21,8 @@ export default () => {
         heading="SwiftAPI — Complete API Testing Solution for Modern Development"
         description="SwiftAPI is your comprehensive API testing platform that streamlines API validation and performance monitoring. With quick analysis of API definitions, fast test development and execution, and precise performance measurement for each endpoint, SwiftAPI empowers your team to deliver reliable and high-performing APIs. Automate your API testing workflow, identify bottlenecks instantly, and ensure your services meet quality standards with minimal effort."
         buttonRounded={false}
-        primaryButtonText="Get Started"
-        imageSrc="https://images.unsplash.com/photo-1555949963-aa79dcee981d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+        primaryButtonText={null}
+        imageSrc={swiftApiHeroImage}
       />
       <HowItWorks
         heading="How SwiftAPI Works"
@@ -53,7 +52,7 @@ export default () => {
       />
       <Benefits
         heading="Why Choose SwiftAPI?"
-        primaryButtonText="Try Free Trial"
+        primaryButtonText={null}
         primaryButtonUrl="#"
         features={[
           {
@@ -71,85 +70,6 @@ export default () => {
         ]}
         textOnLeft={true}
         imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-      />
-      <Testimonials
-        heading="What Our Customers Say"
-        testimonials={[
-          {
-            imageSrc: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-            quote: "SwiftAPI transformed our API testing process. The automatic analysis of our OpenAPI specs saved us days of work, and the performance metrics helped us identify and fix bottlenecks before they reached production. It's now an essential part of our development workflow.",
-            customerName: "Alex Thompson",
-            customerTitle: "API Lead, CloudTech Solutions"
-          },
-          {
-            imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-            quote: "The speed of test development is incredible. What used to take hours now takes minutes. SwiftAPI's intelligent test generation and easy customization let our team focus on complex scenarios while routine tests are handled automatically.",
-            customerName: "David Kim",
-            customerTitle: "Senior QA Engineer, DataFlow Inc."
-          },
-          {
-            imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-            quote: "Performance monitoring with SwiftAPI is outstanding. We can see exactly how each API performs under different loads, and the historical data helps us track improvements over time. This level of visibility was impossible with our previous tools.",
-            customerName: "Rachel Martinez",
-            customerTitle: "DevOps Manager, FinTech Pro"
-          }
-        ]}
-      />
-      <Pricing
-        heading="Choose Your SwiftAPI Plan"
-        subheading="Start testing your APIs today with our flexible pricing options."
-        plans={[
-          {
-            name: "Developer",
-            price: "$39",
-            duration: "per month",
-            mainFeature: "For individual developers",
-            features: [
-              "Up to 10 API endpoints",
-              "Basic performance metrics",
-              "Manual test execution",
-              "Email support",
-              "API definition import"
-            ],
-            featured: false,
-            url: "#"
-          },
-          {
-            name: "Team",
-            price: "$129",
-            duration: "per month",
-            mainFeature: "For development teams",
-            features: [
-              "Unlimited API endpoints",
-              "Advanced performance analytics",
-              "Automated test execution",
-              "CI/CD integration",
-              "Priority support",
-              "Custom assertions & validators",
-              "Test scheduling"
-            ],
-            featured: true,
-            url: "#"
-          },
-          {
-            name: "Enterprise",
-            price: "Custom",
-            duration: "pricing",
-            mainFeature: "For large organizations",
-            features: [
-              "Everything in Team plan",
-              "Dedicated infrastructure",
-              "24/7 phone support",
-              "Advanced security & compliance",
-              "Custom integrations",
-              "On-premise deployment",
-              "SLA guarantees",
-              "Training & onboarding"
-            ],
-            featured: false,
-            url: "#"
-          }
-        ]}
       />
       <Footer />
     </AnimationRevealPage>

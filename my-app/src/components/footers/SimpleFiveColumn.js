@@ -21,7 +21,7 @@ const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:text-primary-500 hocus:border-primary-500 pb-1 transition duration-300`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-10`;
 const LogoText = tw.h5`ml-2 text-xl font-black text-primary-500`;
 
 const CompanyDescription = tw.p`mt-4 max-w-xs font-medium text-sm mx-auto md:mx-0 md:mr-4 `;
@@ -40,8 +40,8 @@ export default () => {
       <FiveColumns>
         <WideColumn>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoImg src={LogoImage} style={{ width: "56px", height: "auto" }} />
+            <LogoText>Modern QA Solutions</LogoText>
           </LogoContainer>
           <CompanyDescription>
             Treact is an Internet Technology company providing design resources such as website templates and themes.

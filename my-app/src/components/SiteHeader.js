@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import tw from "twin.macro";
-import { LogoLink, NavLink as HeaderNavLink, PrimaryLink as HeaderPrimaryLink } from "components/headers/light.js";
+import { LogoLink, NavLink as HeaderNavLink } from "components/headers/light.js";
 import logo from "images/logo.svg";
 
 const Row = tw.div`flex`;
@@ -54,16 +54,9 @@ export default function SiteHeader() {
             )}
           </HeaderNavLink>
 
-          <HeaderNavLink target="_blank" href="https://owaiskhan.me" tw="lg:mx-6 lg:my-0">
+          <HeaderNavLink as={Link} to="/who-we-are" tw="lg:mx-6 lg:my-0">
             Who we are ?
           </HeaderNavLink>
-        </div>
-
-        {/* Download Button */}
-        <div tw="hidden lg:block">
-          <HeaderPrimaryLink target="_blank" href="https://gum.co/QaruQ">
-            Download Now
-          </HeaderPrimaryLink>
         </div>
 
         {/* Mobile Navigation Button */}
@@ -91,12 +84,9 @@ export default function SiteHeader() {
                 </div>
               )}
             </div>
-            <HeaderNavLink target="_blank" href="https://owaiskhan.me" tw="inline-flex items-center px-4 py-2">
+            <HeaderNavLink as={Link} to="/who-we-are" tw="inline-flex items-center px-4 py-2">
               Who we are ?
             </HeaderNavLink>
-            <HeaderPrimaryLink target="_blank" href="https://gum.co/QaruQ" tw="inline-flex items-center px-4 py-2">
-              Download Now
-            </HeaderPrimaryLink>
           </div>
         )}
       </NavRow>
