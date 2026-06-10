@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+
 import { motion } from "framer-motion";
+
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container, Content2Xl } from "components/misc/Layouts";
 import tw from "twin.macro";
