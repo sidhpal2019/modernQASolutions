@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+
+import { motion } from "framer-motion";
+
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container, Content2Xl } from "components/misc/Layouts";
 import tw from "twin.macro";
@@ -6,6 +9,7 @@ import SiteHeader from "components/SiteHeader.js";
 import { SectionHeading as HeadingBase } from "components/misc/Headings";
 import { SectionDescription as DescriptionBase } from "components/misc/Typography";
 
+import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 
 import heroScreenshotImageSrc from "images/demo/Combined_Image_HomePage.png";
@@ -16,6 +20,8 @@ const Row = tw.div`flex`;
 const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 lg:pt-12 pb-16 max-w-screen-2xl mx-auto lg:flex-nowrap`;
 
 const Column = tw.div`flex-1`;
+
+const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:mr-3`;
 
 const TextColumn = tw(Column)`mx-auto lg:mr-0 w-full lg:w-7/12 xl:w-8/12 max-w-2xl lg:max-w-none flex-shrink-0`;
 const Heading = tw(HeadingBase)`text-center lg:text-left text-primary-900 leading-snug`;
