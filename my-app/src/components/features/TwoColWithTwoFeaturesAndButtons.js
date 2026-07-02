@@ -14,14 +14,18 @@ const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-7/12 mt-16 md:mt-0`,
-  props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
+  props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`,
+  !props.showImage && tw`md:w-full md:ml-0 md:mr-0 mt-0`
 ]);
 
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`rounded bg-contain bg-no-repeat bg-center h-full`
 ]);
-const TextContent = tw.div`lg:py-8 text-center md:text-left`;
+const TextContent = styled.div(props => [
+  tw`lg:py-8 text-center md:text-left`,
+  !props.showImage && tw`max-w-screen-lg`
+]);
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
@@ -29,7 +33,10 @@ const Heading = tw(
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
+const Features = styled.div(props => [
+  tw`mt-8 max-w-sm mx-auto md:mx-0`,
+  !props.showImage && tw`max-w-none`
+]);
 const Feature = tw.div`mt-8 flex items-start flex-col md:flex-row`;
 
 const FeatureIconContainer = styled.div`
@@ -56,7 +63,9 @@ export default ({
   primaryButtonText = "See Our Portfolio",
   primaryButtonUrl = "https://timerse.com",
   features = null,
-  textOnLeft = true
+  textOnLeft = true,
+  imageSrc = TeamIllustrationSrc,
+  showImage = true
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -82,15 +91,17 @@ export default ({
   return (
     <Container>
       <TwoColumn>
-        <ImageColumn>
-          <Image imageSrc={TeamIllustrationSrc} />
-        </ImageColumn>
-        <TextColumn textOnLeft={textOnLeft}>
-          <TextContent>
+        {showImage && (
+          <ImageColumn>
+            <Image imageSrc={imageSrc} />
+          </ImageColumn>
+        )}
+        <TextColumn textOnLeft={textOnLeft} showImage={showImage}>
+          <TextContent showImage={showImage}>
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Features>
+            <Features showImage={showImage}>
               {features.map((feature, index) => (
                 <Feature key={index}>
                   <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>

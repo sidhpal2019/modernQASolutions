@@ -51,6 +51,8 @@ export default () => {
       />
       <Benefits
         heading="Why Choose MobileOrbit?"
+        description=""
+        showImage={false}
         primaryButtonText={null}
         primaryButtonUrl="#"
         features={[
@@ -68,7 +70,6 @@ export default () => {
           }
         ]}
         textOnLeft={true}
-        imageSrc="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
       />
       <Footer />
     </AnimationRevealPage>
