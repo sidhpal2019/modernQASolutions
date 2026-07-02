@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2a70a18c.css",
-    "main.js": "/static/js/main.91505286.js",
+    "main.js": "/static/js/main.360b84cf.js",
     "static/media/Combined_Image_HomePage.png": "/static/media/Combined_Image_HomePage.5d5c454167a16a05d2e2.png",
     "static/media/SWIFTAPI_Screen_laptopView.png": "/static/media/SWIFTAPI_Screen_laptopView.001ecac10435f1b41593.png",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
@@ -93,10 +93,10 @@
     "static/media/arrow-left-3-icon.svg": "/static/media/arrow-left-3-icon.087294c1fe78c7fd2f37c3a92b1f1dff.svg",
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.5bf133930c89abdc6760c3a5dacf085b.svg",
     "main.2a70a18c.css.map": "/static/css/main.2a70a18c.css.map",
-    "main.91505286.js.map": "/static/js/main.91505286.js.map"
+    "main.360b84cf.js.map": "/static/js/main.360b84cf.js.map"
   },
   "entrypoints": [
     "static/css/main.2a70a18c.css",
-    "static/js/main.91505286.js"
+    "static/js/main.360b84cf.js"
   ]
 }
